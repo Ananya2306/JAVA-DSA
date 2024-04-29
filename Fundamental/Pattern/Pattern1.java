@@ -10,7 +10,7 @@
 public class Pattern1 {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
+		
 		int n = 3;
 		//this is no. of rows
 	for(int i=1;i<=n;i++) {

@@ -21,6 +21,7 @@ public class Pattern2 {
 
 	           System.out.println();
 	       }
+		   sc.close();
 
 	}
 

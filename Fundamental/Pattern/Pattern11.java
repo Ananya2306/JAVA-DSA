@@ -1,4 +1,13 @@
 import java.util.*;
+/*
+ * Input => 5
+ * Output => 
+ * A
+ * BB
+ * CCC
+ * DDDD
+ * EEEEE
+ */
 public class Pattern11 {
     public static void main(String[] args) {
 

@@ -1,5 +1,13 @@
 import java.util.Scanner;
-
+/* input =
+ * Enter the number:- 
+4
+output =
+1234
+123
+12
+1
+ */
 public class Pattern7 {
     
 	public static void main(String[] args) {

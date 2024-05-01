@@ -13,15 +13,15 @@ public class Pattern14 {
         System.out.print("Enter the number :- ");
         int n = sc.nextInt();
 
-        for (int i = 1; i <= n; i++) {  
-            for(int j = 1; j <=(n-i);j++) {
+        for (int i = 1; i <= n; i++) {  //row
+            for(int j = 1; j <=(n-i);j++) {//space
                 System.out.print(" ");
             }
-            for(int k =0; k<i; k++) {
+            for(int k =0; k<i; k++) {// column increment
                 System.out.print(k+i);
             }
             int z = 2*i-2;
-           for(int l = 1; l<=i-1; l++) {
+           for(int l = 1; l<=i-1; l++) {// column decrement
            
                System.out.print(z--);
             

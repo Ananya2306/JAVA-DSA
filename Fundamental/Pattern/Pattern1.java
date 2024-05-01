@@ -7,24 +7,18 @@
  * 56789
  */
 
+import java.util.Scanner;
+
 public class Pattern1 {
 
 	public static void main(String[] args) {
-		
-		int n = 3;
+		Scanner sc = new Scanner(System.in);
+		System.out.print("Enter the number :- ");
+		int n = sc.nextInt();
 		//this is no. of rows
 	for(int i=1;i<=n;i++) {
-		/*System.out.println(i);
-		for(int j=2;j<=n;j++) {
-			System.out.println(j);
-		} */
-		
 		int a = 1;
 		//print for num of column
-		/*for(int j=i;a<=i;) {
-	
-			System.out.print(j++);
-			a++;*/
 		int j = i;
 		while(a<=i) {
 			System.out.print(j);
@@ -33,7 +27,7 @@ public class Pattern1 {
 		}
 		System.out.println();
 	}
-	
+	sc.close();
    }
 
 }

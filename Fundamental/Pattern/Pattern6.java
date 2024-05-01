@@ -1,4 +1,12 @@
 import java.util.*;
+/*
+ input= 4
+ output =
+* * * *
+* * *
+* *
+*
+ */
 public class Pattern6 {
 
 	public static void main(String[] args) {

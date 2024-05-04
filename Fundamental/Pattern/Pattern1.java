@@ -18,8 +18,8 @@ public class Pattern1 {
 		//this is no. of rows
 	for(int i=1;i<=n;i++) {
 		int a = 1;
-		//print for num of column
-		int j = i;
+		//print for num of column 
+		int j = i; 
 		while(a<=i) {
 			System.out.print(j);
 			j++;

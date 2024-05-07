@@ -10,13 +10,13 @@ Sample Output 2 :
 7
  */
 import java.util.*;
-public class Function4 {
+public class Binary {
     public static void main(String[] args) {
         Scanner s = new Scanner(System.in);
-        System.out.println("Enter the number:- ");
+        System.out.print("Enter the number:- ");
         int n = s.nextInt();
        int rem,sum=0,two=1;
-       while(n!=0)
+       while(n>0)
         {  
             rem=n%10;
             sum=sum+(rem*two);

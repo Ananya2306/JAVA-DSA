@@ -2,7 +2,6 @@ import java.util.*;
 public class Button {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
 		Scanner sc = new Scanner(System.in);
 		int button = sc.nextInt();
 		
@@ -15,6 +14,7 @@ public class Button {
 		break;
 		default : System.out.println("Invalid Button");
 		}
+		sc.close();
 	}
 
 }

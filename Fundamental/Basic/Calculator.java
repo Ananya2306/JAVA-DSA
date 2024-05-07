@@ -3,7 +3,7 @@ import java.util.*;
 public class Calculator {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
+		
 		Scanner sc = new Scanner(System.in);
 		
 		System.out.print("Enter the first number :- ");
@@ -47,7 +47,7 @@ public class Calculator {
 			System.out.println("Invalid Number Entered !!!");
 		}
 		
-		
+		sc.close();
 	}
 
 }

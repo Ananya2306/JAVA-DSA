@@ -1,53 +1,40 @@
 import java.util.Scanner;
 /*
-Write a program to calculate the total salary of a person. 
-The user has to enter the basic salary (an integer) and
-the grade (an uppercase character),
-depending upon which the total salary is calculated as:
+Write a program to input an integer 'n' and
+print the sum of all its even digits and 
+the sum of all its odd digits separately.
 
-    Total_salary = Basic + HRA + DA + Allow – PF
-where :
-HRA   = 20% of basic
-DA    = 50% of basic
-Allow = 1700 if grade = ‘A’
-Allow = 1500 if grade = ‘B’
-Allow = 1300 if grade = ‘C' or any other character
-PF    = 11% of basic.
-Round off the total salary and then print the integral part only.
-Sample Input 1 :
-10000 A
-Sample Output 1 :
-17600
-Sample Input 2 :
-4567 B
-Sample Output 2 :
-8762
+Digits mean numbers, not places!
+ That is, if the given integer is "132456", 
+ even digits are 2, 4, and 6, and 
+ odd digits are 1, 3, and 5.
+Input: 'n' = 132456
+
+Output: 12 9
+
+Explanation:
+The sum of even digits = 2 + 4 + 6 = 12
+The sum of odd digits = 1 + 3 + 5 = 9
  */
 public class Pattern20 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        System.out.print("Enter your Basic Salary:- ");
-        int basic = sc.nextInt();
-        System.out.print("Enter your Grade:- ");
-        char grade = sc.next().charAt(0);
+        System.out.print("Enter the number :- ");
+        int n = sc.nextInt();
 
-        double HRA = (0.2)*basic;
-        double DA = (0.5)*basic;
-        int Allow;
-        if(grade =='A') {
-            Allow = 1700;
-        }else if(grade=='B'){
-            Allow = 1500;
-        }else{
-            Allow = 1300;
+        int evenSum = 0;
+        int oddSum = 0;
+        while (n> 0) {
+            int rem = n % 10;
+            if (rem % 2 == 0) {
+                evenSum= evenSum+ rem;
+            } else {
+                oddSum = oddSum+ rem;
+            }
+            n = n / 10;
         }
-        double PF = (0.11)*basic;
-
-        double Total_salary = (basic+HRA+DA+Allow-PF);
-        int ans = (int)Math.round(Total_salary);
-        System.out.println("The Total Salary is :- " + ans);
+        System.out.println("Sum of Even Number :- "+evenSum +"\n"+ "Sum of Odd Number :-  " + oddSum);
 
         sc.close();
-
     }
 }

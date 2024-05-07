@@ -3,7 +3,7 @@ import java.util.*;
 public class Average {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
+		
 		Scanner sc = new Scanner(System.in);
 		System.out.print("Enter the name of the student :- ");
 		char name = sc.next().charAt(0);// (Ananya) 0 = A ,1 = n, 2 = a, 3 = n, 4 = y , 5 = a
@@ -16,7 +16,7 @@ public class Average {
 
 		int avg = (m1 + m2 + m3) / 3;
 		System.out.println("Name of the Student :- " + name + "\nHis Average marks :- " + avg);
-
+		sc.close();
 	}
 
 }

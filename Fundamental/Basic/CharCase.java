@@ -23,7 +23,7 @@ public class CharCase {
 		{
 			System.out.println("-1");
 		}
-		
+		sc.close();
 	}
 
 }

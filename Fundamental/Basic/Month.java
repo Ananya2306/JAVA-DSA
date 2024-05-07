@@ -3,7 +3,7 @@ import java.util.*;
 public class Month {
 
 	public static void main(String args[]) {
-		// TODO Auto-generated method stub
+		
 		Scanner sc = new Scanner(System.in);
 		
 		System.out.print("Enter the number of the month u want to know from 1 to 12 :- ");
@@ -50,6 +50,7 @@ public class Month {
 			 System.out.println("Invalid Number !!!");
 			 
 		 }
+		 sc.close();
 	}
 
 }

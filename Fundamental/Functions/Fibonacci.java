@@ -9,7 +9,7 @@ Explanation :
 Fibonacci sequence begins 0, 1, 1, 2, 3, 5, ... and so on. Since 5 appears in the sequence.
  */
 public class Fibonacci{
-    public static boolean checkMember(int n) {
+    public static boolean checkNumber(int n) {
         int a=1,b=1,c=0,f=0;
         for(int i=0;c<2*n;i++)
         {
@@ -32,7 +32,7 @@ public class Fibonacci{
         Scanner snr= new Scanner(System.in);
         n=snr.nextInt();
         snr.close();
-        System.out.println(checkMember(n));
+        System.out.println(checkNumber(n));
     }
     
 }

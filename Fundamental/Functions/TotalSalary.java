@@ -23,14 +23,9 @@ Sample Input 2 :
 Sample Output 2 :
 8762
  */
-public class Function3 {
-    public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
-        System.out.print("Enter your Basic Salary:- ");
-        int basic = sc.nextInt();
-        System.out.print("Enter your Grade:- ");
-        char grade = sc.next().charAt(0);
-
+public class TotalSalary {
+    public static void Salary(int basic,char grade){
+        
         double HRA = (0.2)*basic;
         double DA = (0.5)*basic;
         int Allow;
@@ -44,8 +39,21 @@ public class Function3 {
         double PF = (0.11)*basic;
 
         double Total_salary = (basic+HRA+DA+Allow-PF);
+
         int ans = (int)Math.round(Total_salary);
+        
         System.out.println("The Total Salary is :- " + ans);
+    }
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        System.out.print("Enter your Basic Salary:- ");
+        int basic = sc.nextInt();
+
+        System.out.print("Enter your Grade:- ");
+        char grade = sc.next().charAt(0);
+
+        Salary(basic,grade);
 
         sc.close();
 

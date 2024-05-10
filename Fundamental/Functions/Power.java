@@ -15,7 +15,7 @@ Sample Input 2 :
 Sample Output 2 :
 32
  */
-public class Function2 {
+public class Power {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         System.out.print("Enter the number:- ");

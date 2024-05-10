@@ -7,7 +7,7 @@ import java.util.*;
 * *
 *
  */
-public class Pattern6 {
+public class InvertedHalfPyarmid {
 
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);

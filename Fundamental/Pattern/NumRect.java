@@ -1,5 +1,5 @@
 import java.util.*;
-public class Pattern4 {
+public class NumRect {
     public static void main(String[] args) {
 
         Scanner sc = new Scanner(System.in);

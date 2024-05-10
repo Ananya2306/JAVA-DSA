@@ -7,7 +7,7 @@ import java.util.*;
  *******
  */
 
-public class Pattern10 {
+public class Triangle {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         System.out.print("Enter the number :- ");

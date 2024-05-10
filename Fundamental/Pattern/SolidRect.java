@@ -8,7 +8,7 @@ Output =>
  ****
  ****
  */
-public class Pattern3 {
+public class SolidRect {
 
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);

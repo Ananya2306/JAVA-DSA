@@ -5,7 +5,7 @@ import java.util.*;
              ***
              ****
  */
-public class Pattern2 {
+public class HalfPyramid {
 
 	public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);

@@ -8,7 +8,7 @@ Sample Input 1 :
 Sample Output 1 :
 4321
  */
-public class Pattern19 {
+public class ReverseNumber {
     
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);

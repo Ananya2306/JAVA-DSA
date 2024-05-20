@@ -15,6 +15,7 @@ Sample Input 1 :
 Sample Output 1 :
 1 3 5 6 4 2
 
+
 Explanation of Sample Input 1 :
 Since the value of N is 6,
 the number will be stored in the array 
@@ -24,23 +25,34 @@ in a similar fashion 3 is stored at index 1.
 Hence the array becomes 1 3 5 6 4 2.
    
 */
+    public static int[] takeInput() {
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Enter the Size of Array :- ");
+        int n = sc.nextInt();
+        int[] arr = new int[n];
+        sc.close();
+        return arr;
+    }
     public static void populate(int[] arr) {
-
-        for (int i = 0; i < arr.length; i++) {
-            if (i % 2 == 0) {
-
-                arr[i] = i + 1;
-            } else {
-                
-                arr[i] = arr.length - i;
-            }
+        int left= 0;
+        int right = arr.length - 1;
+        int counter =1;
+       while(left<=right){
+        if(counter%2==1){
+            arr[left] = counter;
+            left++; 
         }
+        else{
+            arr[right] = counter;
+            right--;
+        }
+        counter++;
+
+       }
     }
 
     public static void main(String[] args) {
-        Scanner s = new Scanner(System.in);
-        int n = s.nextInt();
-        int[] arr = new int[n];
+       int arr[] = takeInput();
         populate(arr);
         for (int i = 0; i < arr.length; i++) {
             System.out.print(arr[i] + " ");

@@ -1,6 +1,7 @@
 import java.util.Scanner;
 /*
-You have been given a random integer array/list(ARR) and a number X. Find and return the number of triplets in the array/list which sum to X.
+You have been given a random integer array/list(ARR) and a number X.
+ Find and return the number of triplets in the array/list which sum to X.
 Input1 :-
 12
 7

@@ -30,12 +30,6 @@ public class Sort {
                     a++;    
                 }       
         }
-      /*  for(int i=0;i<a;i++){
-            arr[i]=0;
-        }
-        for(int i=a;i<arr.length;i++){
-            arr[i]=1;
-        }*/
         for(int i=0;i<arr.length;i++){
             System.out.print(arr[i]+" ");
         }

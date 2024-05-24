@@ -24,9 +24,13 @@ public class SecLargest {
 		return arr;
 	}
     public static int secondLargest(int[] arr) {
-        int a=0;
+        //largest 
+     /*    int a=0;
+        //second largest
         int b=0;
+        //finding duplicate
         for(int i=0;i<arr.length;i++){
+            //for comapring 
             int c=0;
             for(int j=i+1;j<arr.length;j++){
                 if(arr[i]==arr[j]){
@@ -43,11 +47,32 @@ public class SecLargest {
                 }
             }
         }
+        // if second largest not found 
         if(b==0){
             return -1;
         }
-        return b;
+        // if found then return b 
+        return b;*/
+        int firstLargest = Integer.MIN_VALUE;
+        int secondLargest = Integer.MIN_VALUE;
+        int i;
+        for(i=0;i<arr.length;i++){
+            if(arr[i]>firstLargest){
+                secondLargest = firstLargest;
+                firstLargest=arr[i];
+            }else if(arr[i]>secondLargest && arr[i]!=firstLargest){
+                secondLargest=arr[i];
+           
+                }
+        }
+         if (secondLargest == Integer.MIN_VALUE){
+            return -1;
+         }
+        else{
+            return secondLargest;
+        }
     }
+
     public static void main(String[] args) {
         int[] arr = takeInput();
         System.out.println(secondLargest(arr));

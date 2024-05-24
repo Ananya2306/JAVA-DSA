@@ -1,5 +1,8 @@
 import java.util.Scanner;
-
+/*
+Given an array Arr of size N, print the second smallest distinct element from an array.
+If the second smallest element doesn't exist then return -1.
+*/
 public class SecSmallest {
     public static int[] takeInput() {
 		Scanner s = new Scanner(System.in);

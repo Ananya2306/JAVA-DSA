@@ -9,10 +9,8 @@ public class Smallest {
 		for(int i = 0;i < n;i++) {
 			arr[i] = s.nextInt();
 		}
-
         s.close();
 		return arr;
-
 	}
 
     public static int Small(int[] arr){

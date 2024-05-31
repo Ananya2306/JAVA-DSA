@@ -21,7 +21,7 @@ public class ConsecutiveRemove {
         int start = 0;
         
         for(int i =0;i<str.length();i++){
-           
+        
             if(start!=str.charAt(i)){
                 rem = rem + str.charAt(i);
                 start = str.charAt(i);

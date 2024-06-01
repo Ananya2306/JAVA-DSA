@@ -10,48 +10,30 @@ Input Sentence: "Hello I am Aadil"
 The expected output will look, "olleH I ma lidaA".
  */
 public class ReverseChar {
-   /* * public static String Reverse(String str){
+   
+    public static String Reverse(String str, int start,int end){
         String rev = "";
-        for(int i = str.length()-1;i>=0;i--){
-            rev = rev+str.charAt(i);
+        while(start<end){
+            rev =str.charAt(start)+rev;
+            start++;
         }
         return rev;
     }
 
     public static String Rev(String str){
+        int n = str.length();
+        int index = -1;
         String rev = "";
-        for(int i = 0;i>str.length();i++){
-           if(str.charAt(i)==' '){
-            rev = rev + Reverse(str);
-           }
-
+        int i =0;
+        for(;i<n;i++){
+            if(str.charAt(i)==' '){
+                rev = rev + Reverse(str, index+1, i)+" ";
+                index = i;
+            }
         }
-
-
+        rev = rev+Reverse(str,index+1,i)+" ";
         return rev;
-    }*/
-public static String Reverse(String str, int start,int end){
-    String rev = "";
-    while(start<end){
-        rev =str.charAt(start)+rev;
-        start++;
     }
-    return rev;
-}
-public static String Rev(String str){
-    int n = str.length();
-    int index = -1;
-    String rev = "";
-    int i =0;
-    for(;i<n;i++){
-        if(str.charAt(i)==' '){
-            rev = rev + Reverse(str, index+1, i)+" ";
-            index = i;
-        }
-    }
-       rev = rev+Reverse(str,index+1,i)+" ";
-       return rev;
-}
 
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);

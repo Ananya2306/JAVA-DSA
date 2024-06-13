@@ -1,11 +1,15 @@
 import java.util.Scanner;
 
 public class ArraySum {
-    public static int Sum(int arr[],int n){
-        if(n<=0){
+    public static int Sum(int arr[]){
+      return HelperSum(arr, 0);
+    }
+    public static int HelperSum(int arr[],int startIndex){
+        if(arr.length==startIndex){
             return 0;
         }
-        return arr[n-1]+Sum(arr,n-1); 
+        int ans = arr[startIndex]+HelperSum(arr, startIndex+1);
+        return ans;
     }
     /*
      3
@@ -26,7 +30,7 @@ public class ArraySum {
             for(int i=0;i<arr.length;i++) {
             arr[i]=sc.nextInt();
             }
-        System.out.println(Sum(arr,n));
+        System.out.println(Sum(arr));
         sc.close();
     }
 }

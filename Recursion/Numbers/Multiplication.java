@@ -1,3 +1,4 @@
+package Numbers;
 import java.util.Scanner;
 
 public class Multiplication {
@@ -7,9 +8,6 @@ public class Multiplication {
             return 0;
         }
         return m + multiply(m, n - 1);
-        /*
-         3*5 = 3+3+3+3+3
-         */
     }
 
     public static void main(String[] args) {

@@ -1,3 +1,4 @@
+package Numbers;
 import java.util.Scanner;
 
 public class Power {
@@ -7,22 +8,6 @@ public class Power {
         }
         return x*Pow(x, n-1);
     }
-    /*
-     n= 2
-     x = 2
-     unsatis
-     2*pow(2,1)
-     x=2
-     n=1
-     unsatis
-     2*pow(2,0)
-     x=2
-     n=0
-     satis
-     return 1
-     2*2
-     4
-     */
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         System.out.print("Enter the number :- ");

@@ -1,3 +1,4 @@
+package Numbers;
 import java.util.*;
 public class PrintNumber {
     public static void Printing(int n){

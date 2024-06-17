@@ -1,6 +1,6 @@
-import java.util.Scanner;
-
-public class FirstOccur {
+package Arrays;
+import java.util.*;
+public class FindNum {
     public static int[] takeInput(){
         Scanner s = new Scanner(System.in);
         System.out.print("Enter the size of array:- ");
@@ -12,26 +12,25 @@ public class FirstOccur {
         s.close();
         return arr;
     }
-    public static int First(int arr[],int x){
-        
-        return HelperIndices(arr,0,x);
-
+    public static boolean Num(int[] arr,int x){
+        return HelperNum(arr,0,x);
     }
-    public static int HelperIndices(int arr[],int startIndex,int x){
+
+    public static boolean HelperNum(int[] arr, int startIndex,int x){
         if(arr.length==startIndex){
-            return -1;
+            return false;
         }
         if(arr[startIndex]==x){
-            return startIndex;
+            return true;
         }
-        return HelperIndices(arr,startIndex+1,x);
+        return HelperNum(arr,startIndex+1,x);
     }
-     public static void main(String[] args) {
+    public static void main(String[] args) {
         Scanner s = new Scanner(System.in);
         System.out.print("Enter the element to be searched:- ");
         int x = s.nextInt();
         int[] arr = takeInput();
-        int result = First(arr,x);
+        boolean result = Num(arr,x);
         System.out.println(result);
         s.close();
     }

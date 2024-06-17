@@ -1,3 +1,4 @@
+package Numbers;
 import java.util.Scanner;
 public class CountZero {
     /*

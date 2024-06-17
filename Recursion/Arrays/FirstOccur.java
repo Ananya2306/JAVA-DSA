@@ -1,7 +1,8 @@
+package Arrays;
 import java.util.Scanner;
 
-public class LastOccur {
-      public static int[] takeInput(){
+public class FirstOccur {
+    public static int[] takeInput(){
         Scanner s = new Scanner(System.in);
         System.out.print("Enter the size of array:- ");
         int n = s.nextInt();
@@ -12,7 +13,7 @@ public class LastOccur {
         s.close();
         return arr;
     }
-    public static int Last(int arr[],int x){
+    public static int First(int arr[],int x){
         
         return HelperIndices(arr,0,x);
 
@@ -21,18 +22,17 @@ public class LastOccur {
         if(arr.length==startIndex){
             return -1;
         }
-        int ans = HelperIndices(arr,startIndex+1,x);
-        if(arr[startIndex]==x && ans==-1){
+        if(arr[startIndex]==x){
             return startIndex;
         }
-        return ans;
+        return HelperIndices(arr,startIndex+1,x);
     }
      public static void main(String[] args) {
         Scanner s = new Scanner(System.in);
         System.out.print("Enter the element to be searched:- ");
         int x = s.nextInt();
         int[] arr = takeInput();
-        int result = Last(arr,x);
+        int result = First(arr,x);
         System.out.println(result);
         s.close();
     }

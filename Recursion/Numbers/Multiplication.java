@@ -1,6 +1,10 @@
 package Numbers;
 import java.util.Scanner;
-
+/*
+ * Given two integers M & N, 
+ * calculate and return their multiplication using recursion. 
+ * You can only use subtraction and addition for your calculation
+ */
 public class Multiplication {
     public static int multiply(int m, int n) {
         

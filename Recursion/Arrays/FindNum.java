@@ -1,5 +1,10 @@
 package Arrays;
 import java.util.*;
+/*
+ Given an array of length N and an integer x, 
+ you need to find if x is present in the array or not. 
+Return true or false
+ */
 public class FindNum {
     public static int[] takeInput(){
         Scanner s = new Scanner(System.in);

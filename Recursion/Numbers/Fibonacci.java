@@ -1,6 +1,10 @@
 package Numbers;
 import java.util.Scanner;
-
+/*
+to	find nth Fibonacci number	.	In	Fibonacci	
+series	to	calculate nth	Fibonacci number we	can	use	the	formula	F(n)=F(n– 1)+	
+F(n	– 2)i.e. nth Fibonacci term	is	equal	to	sum	of	n-1	and	n-2
+ */
 public class Fibonacci {
     public static int Fibo(int n) {
         if(n==0 || n==1){

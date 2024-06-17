@@ -1,6 +1,6 @@
 package Numbers;
 import java.util.Scanner;
-
+//You are given a number 'n'.Return number of digits in ‘n’.
 public class DigitCount {
     public static int Digit(int n){
         if(n<10){

@@ -1,6 +1,8 @@
 package Arrays;
 import java.util.Scanner;
-
+/*
+Given an array of length N, you need to find and return the sum of all elements of the array.
+ */
 public class ArraySum {
     public static int Sum(int arr[]){
       return HelperSum(arr, 0);
@@ -12,15 +14,6 @@ public class ArraySum {
         int ans = arr[startIndex]+HelperSum(arr, startIndex+1);
         return ans;
     }
-    /*
-     3
-     9 8 9
-     return 9+8+9=26
-
-        3
-        4 2 1
-        return 4+2+1=7
-     */
     public static void main(String[] args) {
        
             Scanner sc = new Scanner(System.in);

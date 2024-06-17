@@ -2,9 +2,9 @@ import java.util.Scanner;
 
 public class Multiplication {
     public static int multiply(int m, int n) {
-        // if a num * by 1 give 1
-        if (n == 1) {
-            return m;
+        
+        if (n == 0) {
+            return 0;
         }
         return m + multiply(m, n - 1);
         /*

@@ -1,20 +1,14 @@
-package LinkedList.Basic;
-class Node<T> {
-    T data;
-    Node<T> next;
-    Node(T data){
-        this.data = data;
-    }
-}
-public class LL1 {  
-        public static void print(Node<Integer> head) {
-            Node<Integer> temp = head;
-            while(temp!=null) {
-                System.out.print(temp.data + " ");
-                temp = temp.next;
-            }
-            System.out.println();
+package LinkedList;
+
+public class LL1 {     
+    public static void printList(Node<Integer> head) {
+        Node<Integer> temp = head;
+        while(temp!=null) {
+            System.out.print(temp.data + " ");
+            temp = temp.next;
         }
+        System.out.println();
+    }
         
         public static void main(String[] args) {
             Node<Integer> node1 = new Node<Integer>(10);
@@ -26,8 +20,14 @@ public class LL1 {
             node2.next = node3;
             node3.next = node4;
             node4.next = node5;
-            print(node1);
+            printList(node1);
         }
     
     }
-    
+    class Node<T> {
+        T data;
+        Node<T> next;
+        Node(T data){
+            this.data = data;
+        }
+    }

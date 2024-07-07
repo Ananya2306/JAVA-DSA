@@ -15,7 +15,7 @@ Sample Output 1 :
 public class ConsecutiveDuplicateNode {
     public static Node<Integer> Duplicate(Node<Integer> head){
        Node<Integer> temp = head;
-        while(temp!=null && temp.next!=null){
+        while(temp.next!=null){
             if((temp.data) ==(temp.next.data)){
                 temp.next = temp.next.next;
             }else{
@@ -26,7 +26,7 @@ public class ConsecutiveDuplicateNode {
         }
     public static void main(String[] args) {
         Node<Integer> node1 = new Node<Integer>(1);
-        Node<Integer> node2 = new Node<Integer>(2);
+        Node<Integer> node2 = new Node<Integer>(3);
         Node<Integer> node3 = new Node<Integer>(3);
         Node<Integer> node4 = new Node<Integer>(3);
         Node<Integer> node5 = new Node<Integer>(5);

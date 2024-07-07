@@ -1,6 +1,6 @@
-package LinkedList;
+package LinkedList.Basic;
 
-public class LL1 {     
+public class PrintNode {     
     public static void printList(Node<Integer> head) {
         Node<Integer> temp = head;
         while(temp!=null) {

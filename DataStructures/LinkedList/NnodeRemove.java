@@ -1,5 +1,4 @@
 package LinkedList;
-
 /*
 nth node from list + delete nth node
 

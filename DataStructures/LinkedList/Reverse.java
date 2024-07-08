@@ -1,5 +1,4 @@
 package LinkedList;
-
 public class Reverse {
     Node head;
    // private int size;

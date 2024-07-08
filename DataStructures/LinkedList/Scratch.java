@@ -1,5 +1,4 @@
 package LinkedList;
-
 public class Scratch {
     Node head;
     private int size;

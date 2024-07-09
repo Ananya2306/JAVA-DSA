@@ -10,13 +10,16 @@ Assume that the Indexing for the linked list always starts from 0.
  */
 public class FirstOccurence {
     public static int NthNode(Node<Integer> head, int n) {
+        return Helper(head, 0, n);
+    }
+    public static int Helper(Node<Integer> head, int position,int n){
         if(head == null) {
             return -1;
         }
         if(head.data == n) {
-            return 0;
+            return position;
         }
-        return NthNode(head.next, n) + 1;
+        return Helper(head.next,position+1 ,n);
     }
 
     public static void main(String[] args) {
@@ -29,7 +32,7 @@ public class FirstOccurence {
         node2.next = node3;
         node3.next = node4;
         node4.next = node5;
-        System.out.println(NthNode(node1,30));
+        System.out.println(NthNode(node1,3));
     }
 }
 class Node<T> {

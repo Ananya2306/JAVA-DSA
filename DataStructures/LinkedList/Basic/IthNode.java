@@ -1,5 +1,12 @@
 package LinkedList.Basic;
+/*
+For a given a singly linked list of integers and a position 'i', print the node data at the 'i-th' position.
 
+ Note :
+Assume that the Indexing for the singly linked list always starts from 0.
+
+If the given position 'i',  is greater than the length of the given singly linked list, then don't print anything.
+ */
 public class IthNode {
     public static void printList(Node<Integer> head) {
         Node<Integer> temp = head;

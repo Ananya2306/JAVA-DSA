@@ -3,7 +3,7 @@ package LinkedList.TakeInputBasic;
 import java.util.Scanner;
 
 public class DeleteNode {
-     public static Node<Integer> TakeInput() {
+    public static Node<Integer> TakeInput() {
 		Node<Integer> head = null;
 		Node<Integer> tail = null;
 		Scanner sc = new Scanner(System.in);

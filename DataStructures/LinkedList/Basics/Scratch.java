@@ -1,4 +1,4 @@
-package LinkedList;
+package LinkedList.Basics;
 public class Scratch {
     Node head;
     private int size;

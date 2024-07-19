@@ -1,4 +1,4 @@
-package LinkedList;
+package LinkedList.Basics;
 import java.util.*;
 public class CollectFrame {
 

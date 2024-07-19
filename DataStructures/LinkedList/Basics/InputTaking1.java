@@ -1,4 +1,4 @@
-package LinkedList;
+package LinkedList.Basics;
 import java.util.Scanner;
 public class InputTaking1 {
 	public static Node<Integer> TakeInput() {

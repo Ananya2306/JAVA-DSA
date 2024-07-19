@@ -15,16 +15,16 @@ public class MSort {
         sc.close();
         return arr;
     }
-    public static void Divide(int arr[],int startIndex,int endIndex){
+    public static void MergeSort(int arr[],int startIndex,int endIndex){
         if(startIndex>=endIndex){
             return;
         }
         int mid = startIndex+(endIndex-startIndex)/2;
-        Divide(arr,startIndex,mid);
-        Divide(arr,mid+1,endIndex);
-        Conquer(arr,startIndex,mid,endIndex);
+        MergeSort(arr,startIndex,mid);
+        MergeSort(arr,mid+1,endIndex);
+        Merge(arr,startIndex,mid,endIndex);
     }
-    public static void Conquer(int arr[],int startIndex,int mid,int endIndex){
+    public static void Merge(int arr[],int startIndex,int mid,int endIndex){
         int merged[] = new int[endIndex-startIndex+1];
 
         int index1 = startIndex;
@@ -53,7 +53,7 @@ public class MSort {
     public static void main(String[] args) {
         int arr[] = takeInput();
         int n = arr.length;
-        Divide(arr,0,n-1);
+        MergeSort(arr,0,n-1);
         for(int i=0;i<n;i++){
             System.out.print(arr[i]+" ");
         }

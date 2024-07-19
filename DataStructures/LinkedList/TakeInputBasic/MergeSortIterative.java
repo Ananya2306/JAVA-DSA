@@ -1,6 +1,6 @@
 package LinkedList.TakeInputBasic;
 
-import java.util.ArrayList;
+//import java.util.ArrayList;
 import java.util.Scanner;
 
 public class MergeSortIterative {
@@ -11,7 +11,7 @@ public class MergeSortIterative {
 		int data = sc.nextInt();
 		while(data!=-1) {
 			Node<Integer> newNode = new Node<Integer>(data);
-			if(head==null) {
+			if(head==null) { 
 				head = newNode;
 				tail=newNode;
 			}else {

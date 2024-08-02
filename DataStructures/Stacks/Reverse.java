@@ -13,17 +13,13 @@ public class Reverse {
     	int size = sr.nextInt();
     	StackUsingLL<Integer> input = new StackUsingLL<>();
 
-    	if (size == 0) 
-    	{
-    		return input;
-    	}
-
     	for(int i = 0; i < size; i++) 
     	{
     	    int var = sr.nextInt();
     		input.push(var);
     	}
 
+		sr.close();
     	return input;
     }
 	

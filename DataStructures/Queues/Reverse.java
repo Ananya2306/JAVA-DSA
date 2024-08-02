@@ -20,7 +20,7 @@ public class Reverse {
     	    int var = sr.nextInt();
     		input.enqueue(var);
     	}
-    	//sr.close();
+    	sr.close();
     	return input;
     }
 	
